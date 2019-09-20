@@ -21,18 +21,21 @@ def palindrome(l):
 		num+=p
 		if num==l[i]:
 			k.append(num)
+			num=0
 		else:
 			num=0
 	return k
 
 
 c=palindrome(l)
+print(c)
 
 file.write(str(c))
 file.close
 
 file=open('file.txt','r')
-file.read()
+for i in file:
+	print(i)
 
 file.close()
 	
